@@ -35,7 +35,9 @@
             <h1 class="font--natural-log">This is a font!</h1>
           </section>
         </section>
-        <section>FONTS!</section>
+        <section>
+          <countdown time="30" autostart="no" />
+        </section>
       </div>
     </div>
 
@@ -43,15 +45,17 @@
     <!-- <script src="plugin/notes/notes.js"></script> -->
     <!-- <script src="plugin/markdown/markdown.js"></script> -->
     <!-- <script src="plugin/highlight/highlight.js"></script> -->
+    <script src="dist/plugins/countdown.js"></script>
     <script>
       // More info about initialization & config:
       // - https://revealjs.com/initialization/
       // - https://revealjs.com/config/
       Reveal.initialize({
         hash: true,
-
+        dependencies: [{ src: "dist/plugins/countdown.js" }],
         // Learn about plugins: https://revealjs.com/plugins/
         // plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        countdown: { defaultTime: 600, autostart: "no" },
       });
     </script>
   </body>
