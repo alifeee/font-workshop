@@ -1,0 +1,34 @@
+/* FONTS BY @alifeee */
+@font-face {
+  font-family: "BogFace";
+  src: url("./bogface/BogFace.woff");
+}
+.font--bogface {
+  font-family: "BogFace", sans-serif !important;
+}
+
+/* FONTS BY TOM7 */
+/* NATURAL LOG */
+@font-face {
+  font-family: "Natural Log";
+  src: url("./natural-log/natlog.woff");
+}
+.font--natural-log {
+  font-family: "Natural Log", sans-serif !important;
+}
+/* BORING BORON */
+@font-face {
+  font-family: "Boring Boron";
+  src: url("./boring-boron/bboron.woff");
+}
+.font--boring-boron {
+  font-family: "Boring Boron", sans-serif !important;
+}
+/* VALIUM */
+@font-face {
+  font-family: "Valium";
+  src: url("./valium/valium.woff") format("woff");
+}
+.font--valium {
+  font-family: "Valium", cursive !important;
+}
