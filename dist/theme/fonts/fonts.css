@@ -8,6 +8,8 @@
 }
 
 /* FONTS BY TOM7 */
+/* from http://fonts.tom7.com/fonts93.html */
+/* or http://fonts.tom7.com/fonts98.html */
 /* NATURAL LOG */
 @font-face {
   font-family: "Natural Log";
@@ -27,8 +29,77 @@
 /* VALIUM */
 @font-face {
   font-family: "Valium";
-  src: url("./valium/valium.woff") format("woff");
+  src: url("./valium/valium.woff");
 }
 .font--valium {
   font-family: "Valium", cursive !important;
+}
+/* ANGSTROM */
+@font-face {
+  font-family: "Angstrom";
+  src: url("./angstrom/angstrom.woff");
+}
+.font--angstrom {
+  font-family: "Angstrom", sans-serif !important;
+}
+/* TOM'S NEW ROMAN */
+@font-face {
+  font-family: "Tom's New Roman";
+  src: url("./toms-new-roman/tomnr.woff");
+}
+.font--toms-new-roman {
+  font-family: "Tom's New Roman", serif !important;
+}
+/* EPILOG */
+@font-face {
+  font-family: "Epilog";
+  src: url("./epilog/epilog.woff");
+}
+.font--epilog {
+  font-family: "Epilog", sans-serif !important;
+}
+/* GERMS */
+@font-face {
+  font-family: "Germs";
+  src: url("./germs/germs.woff");
+}
+.font--germs {
+  font-family: "Germs", sans-serif !important;
+}
+/* TOM'S HANDWRITING */
+@font-face {
+  font-family: "Tom's Handwriting";
+  src: url("./toms-handwriting/tomhand.woff");
+}
+.font--toms-handwriting {
+  font-family: "Tom's Handwriting", cursive !important;
+}
+
+/* FONTS BY CLOFONT */
+/* UNPLUGGED */
+/* http://clofont.free.fr/Police/creation_alpha1.htm */
+@font-face {
+  font-family: "Unplugged";
+  src: url("./unplugged/AlphaUnplugged.woff");
+}
+.font--unplugged {
+  font-family: "Unplugged", cursive !important;
+}
+/* PETITS BATEAUX */
+/* http://clofont.free.fr/Police/creation_misc1.htm */
+@font-face {
+  font-family: "Petits Bateaux";
+  src: url("./petits-bateaux/Petits\ Bateaux.woff");
+}
+.font--petits-bateaux {
+  font-family: "Petits Bateaux", cursive !important;
+}
+/* CHOPIN SCRIPT */
+/* http://clofont.free.fr/Police/msolo1.htm */
+@font-face {
+  font-family: "Chopin Script";
+  src: url("./chopin/CHOPS___.TTF.woff");
+}
+.font--chopin-script {
+  font-family: "Chopin Script", cursive !important;
 }
