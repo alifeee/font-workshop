@@ -24,7 +24,7 @@
   </head>
   <body>
     <div class="reveal">
-      <div class="slides">
+      <section class="slides">
         <section>
           <h1 class="font--bogface">Font Workshop!</h1>
           <span class="font--toms-new-roman block">by alifeee</span>
@@ -65,7 +65,122 @@
         <section>
           <h1 class="font--toms-handwriting">How to use FontForge</h1>
         </section>
-      </div>
+        <section>
+          <section>
+            <h2 class="font--epilog">Context</h2>
+            <div class="r-stack">
+              <img
+                src="./images/kiran-total.png"
+                alt='Picture of writing on wall that says "Kiran: Builder" and a phone number'
+              />
+              <img
+                class="fragment"
+                src="./images/kiran-quantized.png"
+                alt='Black and white picture of writing on wall that says "Kiran: Builder" and a phone number'
+              />
+              <img
+                class="fragment"
+                src="./images/kiran_A_wob.png"
+                alt="letter A, white on black"
+              />
+              <img
+                class="fragment"
+                src="./images/kiran_A_bow.png"
+                alt="letter A, black on white"
+              />
+            </div>
+          </section>
+        </section>
+        <section>
+          <section data-auto-animate>
+            <h2 class="font--epilog" data-id="h2">FontForge Windows</h2>
+            <ul class="font--toms-handwriting">
+              <li>Overview ("Bitmap Window")</li>
+              <li>Drawing ("Outline Window")</li>
+              <li>Preview ("Metrics Window")</li>
+            </ul>
+          </section>
+          <section data-auto-animate>
+            <h2 class="font--epilog" data-id="h2">FontForge Windows: Bitmap</h2>
+            <h3 class="font--toms-handwriting">"The Overview"</h3>
+            <img
+              class="r-stretch"
+              src="./images/fontforge_window_bitmap.png"
+              alt="FontForge bitmap window, showing lots of letters, some filled in."
+            />
+          </section>
+          <section data-auto-animate>
+            <h2 class="font--epilog" data-id="h2">
+              FontForge Windows: Metrics
+            </h2>
+            <h3 class="font--toms-handwriting">"The Preview"</h3>
+            <img
+              src="./images/fontforge_window_metrics.png"
+              alt="FontForge Metrics window, showing a preview of the font."
+            />
+            <p class="fragment">spacing, kerning</p>
+          </section>
+          <section data-auto-animate>
+            <h2 class="font--epilog" data-id="h2">
+              FontForge Windows: Outline
+            </h2>
+            <h3 class="font--toms-handwriting">"The Drawing"</h3>
+            <!-- <div class="r-stack"> -->
+            <!-- style="max-height: 80vh" -->
+            <!-- <div style="display: block; flex-direction: column"> -->
+            <img
+              class="r-stretch"
+              src="./images/fontforge_window_outline.png"
+              alt="FontForge outline window, showing a half-drawn letter A, and Bezier points."
+            />
+          </section>
+          <section data-auto-animate>
+            <div class="r-stack r-stretch">
+              <img
+                src="./images/fontforge_window_outline.png"
+                alt="FontForge outline window, showing a half-drawn letter A, and Bezier points."
+              />
+              <img
+                class="fragment"
+                data-fragment-index="1"
+                src="./images/fontforge_docs_window_outline.png"
+                alt="annotated view of the FontForge outline window from their docs"
+              />
+            </div>
+            <figcaption class="fragment" data-fragment-index="1">
+              <a
+                href="https://fontforge.org/docs/ui/mainviews/charview.html"
+                target="_blank"
+                >https://fontforge.org/docs/ui/mainviews/charview.html</a
+              >
+            </figcaption>
+          </section>
+        </section>
+        <section>
+          <h3 class="font--toms-new-roman">Auto-tracing</h3>
+          <p class="font--epilog fragment" data-fragment-index="1">
+            "rough and ready"
+          </p>
+          <div class="r-stack r-stretch">
+            <img
+              class="fragment"
+              data-fragment-index="1"
+              src="./images/fontforge_kiran_A_background.png"
+              alt="FontForge outline window, showing an outline of a letter A."
+            />
+            <img
+              class="fragment"
+              src="./images/fontforge_kiran_A_full.png"
+              alt="FontForge outline window, showing a letter A, with lots of Bezier points."
+            />
+            <img
+              class="fragment"
+              src="./images/fontforge_kiran_A_simplified.png"
+              alt="FontForge outline window, showing a letter A, with fewer Bezier points than the previous image."
+            />
+          </div>
+        </section>
+      </section>
     </div>
 
     <script src="dist/reveal.js"></script>
