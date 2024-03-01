@@ -1,0 +1,912 @@
+@font-face {
+  font-family: "18thCtrKurStart";
+  src: url("./1 - Handwriting/18th Century Kurrent/18thCtrKurStart.woff") format(woff);
+}
+.font--18thctrkurstart {
+  font-family: "18thCtrKurStart" !important;
+}
+
+@font-face {
+  font-family: "JaneAust";
+  src: url("./1 - Handwriting/JaneAusten/JaneAust.woff") format(woff);
+}
+.font--janeaust {
+  font-family: "JaneAust" !important;
+}
+
+@font-face {
+  font-family: "loveslb_U";
+  src: url("./1 - Handwriting/Love'sLabour/loveslb_U.woff") format(woff);
+}
+.font--loveslb_u {
+  font-family: "loveslb_U" !important;
+}
+
+@font-face {
+  font-family: "tagettPl";
+  src: url("./1 - Handwriting/Tagettes/tagettPl.woff") format(woff);
+}
+.font--tagettpl {
+  font-family: "tagettPl" !important;
+}
+
+@font-face {
+  font-family: "tagetts";
+  src: url("./1 - Handwriting/Tagettes/tagetts.woff") format(woff);
+}
+.font--tagetts {
+  font-family: "tagetts" !important;
+}
+
+@font-face {
+  font-family: "Windsong";
+  src: url("./1 - Handwriting/Windsong/Windsong.woff") format(woff);
+}
+.font--windsong {
+  font-family: "Windsong" !important;
+}
+
+@font-face {
+  font-family: "wenzel1";
+  src: url("./1 - Handwriting/Wirwenzlaw Rough/wenzel1.woff") format(woff);
+}
+.font--wenzel1 {
+  font-family: "wenzel1" !important;
+}
+
+@font-face {
+  font-family: "WorstveldSling";
+  src: url("./1 - Handwriting/Worstveld Sling/WorstveldSling.woff") format(woff);
+}
+.font--worstveldsling {
+  font-family: "WorstveldSling" !important;
+}
+
+@font-face {
+  font-family: "WorstveldSlingExtra";
+  src: url("./1 - Handwriting/Worstveld Sling/WorstveldSlingExtra.woff") format(woff);
+}
+.font--worstveldslingextra {
+  font-family: "WorstveldSlingExtra" !important;
+}
+
+@font-face {
+  font-family: "WorstveldSlingExtra2Oblique";
+  src: url("./1 - Handwriting/Worstveld Sling/WorstveldSlingExtra2Oblique.woff") format(woff);
+}
+.font--worstveldslingextra2oblique {
+  font-family: "WorstveldSlingExtra2Oblique" !important;
+}
+
+@font-face {
+  font-family: "WorstveldSlingExtraOblique";
+  src: url("./1 - Handwriting/Worstveld Sling/WorstveldSlingExtraOblique.woff") format(woff);
+}
+.font--worstveldslingextraoblique {
+  font-family: "WorstveldSlingExtraOblique" !important;
+}
+
+@font-face {
+  font-family: "WorstveldSlingOblique";
+  src: url("./1 - Handwriting/Worstveld Sling/WorstveldSlingOblique.woff") format(woff);
+}
+.font--worstveldslingoblique {
+  font-family: "WorstveldSlingOblique" !important;
+}
+
+@font-face {
+  font-family: "XIPARS_U";
+  src: url("./1 - Handwriting/Xiparos/XIPARS_U.woff") format(woff);
+}
+.font--xipars_u {
+  font-family: "XIPARS_U" !important;
+}
+
+@font-face {
+  font-family: "xirwena1";
+  src: url("./1 - Handwriting/Xirwena/xirwena1.woff") format(woff);
+}
+.font--xirwena1 {
+  font-family: "xirwena1" !important;
+}
+
+@font-face {
+  font-family: "Arabella";
+  src: url("./2 - Italian and French Italics/Arabella/Arabella.woff") format(woff);
+}
+.font--arabella {
+  font-family: "Arabella" !important;
+}
+
+@font-face {
+  font-family: "chancur";
+  src: url("./2 - Italian and French Italics/Chancery Cursive/chancur.woff") format(woff);
+}
+.font--chancur {
+  font-family: "chancur" !important;
+}
+
+@font-face {
+  font-family: "Forelle";
+  src: url("./2 - Italian and French Italics/Forelle/Forelle.woff") format(woff);
+}
+.font--forelle {
+  font-family: "Forelle" !important;
+}
+
+@font-face {
+  font-family: "FLllana_U";
+  src: url("./2 - Italian and French Italics/FranciscoLucas Llana/FLllana_U.woff") format(woff);
+}
+.font--flllana_u {
+  font-family: "FLllana_U" !important;
+}
+
+@font-face {
+  font-family: "Gabrielle";
+  src: url("./2 - Italian and French Italics/Gabrielle/Gabrielle.woff") format(woff);
+}
+.font--gabrielle {
+  font-family: "Gabrielle" !important;
+}
+
+@font-face {
+  font-family: "MKBritishWriting";
+  src: url("./2 - Italian and French Italics/MKBritishWriting/MKBritishWriting.woff") format(woff);
+}
+.font--mkbritishwriting {
+  font-family: "MKBritishWriting" !important;
+}
+
+@font-face {
+  font-family: "alsscrp";
+  src: url("./3 - English Copperplate/ALS Script/alsscrp.woff") format(woff);
+}
+.font--alsscrp {
+  font-family: "alsscrp" !important;
+}
+
+@font-face {
+  font-family: "Beautiful ES";
+  src: url("./3 - English Copperplate/Beautiful ES/Beautiful ES.woff") format(woff);
+}
+.font--beautiful-es {
+  font-family: "Beautiful ES" !important;
+}
+
+@font-face {
+  font-family: "caclaskocondensed";
+  src: url("./3 - English Copperplate/CAC Lasko Condensed/caclaskocondensed.woff") format(woff);
+}
+.font--caclaskocondensed {
+  font-family: "caclaskocondensed" !important;
+}
+
+@font-face {
+  font-family: "exmouth_";
+  src: url("./3 - English Copperplate/Exmouth/exmouth_.woff") format(woff);
+}
+.font--exmouth_ {
+  font-family: "exmouth_" !important;
+}
+
+@font-face {
+  font-family: "Flaemische Kanzleischrift";
+  src: url("./3 - English Copperplate/Flaemische Kanzleischrift/Flaemische Kanzleischrift.woff") format(woff);
+}
+.font--flaemische-kanzleischrift {
+  font-family: "Flaemische Kanzleischrift" !important;
+}
+
+@font-face {
+  font-family: "Jacoba Bold";
+  src: url("./3 - English Copperplate/Jacoba Bold/Jacoba Bold.woff") format(woff);
+}
+.font--jacoba-bold {
+  font-family: "Jacoba Bold" !important;
+}
+
+@font-face {
+  font-family: "Artbrush";
+  src: url("./4 - Brush & Swash/Artbrush/Artbrush.woff") format(woff);
+}
+.font--artbrush {
+  font-family: "Artbrush" !important;
+}
+
+@font-face {
+  font-family: "bru35__r";
+  src: url("./4 - Brush & Swash/BrushStroke 35/bru35__r.woff") format(woff);
+}
+.font--bru35__r {
+  font-family: "bru35__r" !important;
+}
+
+@font-face {
+  font-family: "cacshishonibrush";
+  src: url("./4 - Brush & Swash/CAC Shishoni Brush/cacshishonibrush.woff") format(woff);
+}
+.font--cacshishonibrush {
+  font-family: "cacshishonibrush" !important;
+}
+
+@font-face {
+  font-family: "Darkh4";
+  src: url("./4 - Brush & Swash/Dark Horse/Darkh4.woff") format(woff);
+}
+.font--darkh4 {
+  font-family: "Darkh4" !important;
+}
+
+@font-face {
+  font-family: "Darkhc";
+  src: url("./4 - Brush & Swash/Dark Horse/Darkhc.woff") format(woff);
+}
+.font--darkhc {
+  font-family: "Darkhc" !important;
+}
+
+@font-face {
+  font-family: "Darkhe";
+  src: url("./4 - Brush & Swash/Dark Horse/Darkhe.woff") format(woff);
+}
+.font--darkhe {
+  font-family: "Darkhe" !important;
+}
+
+@font-face {
+  font-family: "Darkhi";
+  src: url("./4 - Brush & Swash/Dark Horse/Darkhi.woff") format(woff);
+}
+.font--darkhi {
+  font-family: "Darkhi" !important;
+}
+
+@font-face {
+  font-family: "Darkhs";
+  src: url("./4 - Brush & Swash/Dark Horse/Darkhs.woff") format(woff);
+}
+.font--darkhs {
+  font-family: "Darkhs" !important;
+}
+
+@font-face {
+  font-family: "Express";
+  src: url("./4 - Brush & Swash/Express/Express.woff") format(woff);
+}
+.font--express {
+  font-family: "Express" !important;
+}
+
+@font-face {
+  font-family: "Fely";
+  src: url("./4 - Brush & Swash/Fely/Fely.woff") format(woff);
+}
+.font--fely {
+  font-family: "Fely" !important;
+}
+
+@font-face {
+  font-family: "SedonaScriptFLF";
+  src: url("./4 - Brush & Swash/FLFSedonaScript/SedonaScriptFLF.woff") format(woff);
+}
+.font--sedonascriptflf {
+  font-family: "SedonaScriptFLF" !important;
+}
+
+@font-face {
+  font-family: "FREEBSCA";
+  src: url("./4 - Brush & Swash/Freebooter Script/FREEBSCA.woff") format(woff);
+}
+.font--freebsca {
+  font-family: "FREEBSCA" !important;
+}
+
+@font-face {
+  font-family: "FREEBSC_";
+  src: url("./4 - Brush & Swash/Freebooter Script/FREEBSC_.woff") format(woff);
+}
+.font--freebsc_ {
+  font-family: "FREEBSC_" !important;
+}
+
+@font-face {
+  font-family: "HoneyScript-Light";
+  src: url("./4 - Brush & Swash/Honey Script/HoneyScript-Light.woff") format(woff);
+}
+.font--honeyscript-light {
+  font-family: "HoneyScript-Light" !important;
+}
+
+@font-face {
+  font-family: "HoneyScript-SemiBold";
+  src: url("./4 - Brush & Swash/Honey Script/HoneyScript-SemiBold.woff") format(woff);
+}
+.font--honeyscript-semibold {
+  font-family: "HoneyScript-SemiBold" !important;
+}
+
+@font-face {
+  font-family: "Inkburrow";
+  src: url("./4 - Brush & Swash/Inkburrow/Inkburrow.woff") format(woff);
+}
+.font--inkburrow {
+  font-family: "Inkburrow" !important;
+}
+
+@font-face {
+  font-family: "KomaLatin";
+  src: url("./4 - Brush & Swash/KomaLatin/KomaLatin.woff") format(woff);
+}
+.font--komalatin {
+  font-family: "KomaLatin" !important;
+}
+
+@font-face {
+  font-family: "MarketingScript-Inline";
+  src: url("./4 - Brush & Swash/Marketing Script/MarketingScript-Inline.woff") format(woff);
+}
+.font--marketingscript-inline {
+  font-family: "MarketingScript-Inline" !important;
+}
+
+@font-face {
+  font-family: "MarketingScript-Shadow";
+  src: url("./4 - Brush & Swash/Marketing Script/MarketingScript-Shadow.woff") format(woff);
+}
+.font--marketingscript-shadow {
+  font-family: "MarketingScript-Shadow" !important;
+}
+
+@font-face {
+  font-family: "MarketingScript";
+  src: url("./4 - Brush & Swash/Marketing Script/MarketingScript.woff") format(woff);
+}
+.font--marketingscript {
+  font-family: "MarketingScript" !important;
+}
+
+@font-face {
+  font-family: "odstemplik";
+  src: url("./4 - Brush & Swash/Odstemplik/odstemplik.woff") format(woff);
+}
+.font--odstemplik {
+  font-family: "odstemplik" !important;
+}
+
+@font-face {
+  font-family: "Same-Sex Marriage LDO";
+  src: url("./4 - Brush & Swash/Same-Sex Marriage Script LDO/Same-Sex Marriage LDO.woff") format(woff);
+}
+.font--same-sex-marriage-ldo {
+  font-family: "Same-Sex Marriage LDO" !important;
+}
+
+@font-face {
+  font-family: "SCRIPALT";
+  src: url("./4 - Brush & Swash/Scriptina/SCRIPALT.woff") format(woff);
+}
+.font--scripalt {
+  font-family: "SCRIPALT" !important;
+}
+
+@font-face {
+  font-family: "SCRIPTIN";
+  src: url("./4 - Brush & Swash/Scriptina/SCRIPTIN.woff") format(woff);
+}
+.font--scriptin {
+  font-family: "SCRIPTIN" !important;
+}
+
+@font-face {
+  font-family: "SFBurlingtonScript-Bold";
+  src: url("./4 - Brush & Swash/SF Burlington Script/SFBurlingtonScript-Bold.woff") format(woff);
+}
+.font--sfburlingtonscript-bold {
+  font-family: "SFBurlingtonScript-Bold" !important;
+}
+
+@font-face {
+  font-family: "SFBurlingtonScript-BoldItal";
+  src: url("./4 - Brush & Swash/SF Burlington Script/SFBurlingtonScript-BoldItal.woff") format(woff);
+}
+.font--sfburlingtonscript-boldital {
+  font-family: "SFBurlingtonScript-BoldItal" !important;
+}
+
+@font-face {
+  font-family: "SFBurlingtonScript-Italic";
+  src: url("./4 - Brush & Swash/SF Burlington Script/SFBurlingtonScript-Italic.woff") format(woff);
+}
+.font--sfburlingtonscript-italic {
+  font-family: "SFBurlingtonScript-Italic" !important;
+}
+
+@font-face {
+  font-family: "SFBurlingtonScript";
+  src: url("./4 - Brush & Swash/SF Burlington Script/SFBurlingtonScript.woff") format(woff);
+}
+.font--sfburlingtonscript {
+  font-family: "SFBurlingtonScript" !important;
+}
+
+@font-face {
+  font-family: "SFBurlingtonScriptSC-Bold";
+  src: url("./4 - Brush & Swash/SF Burlington Script/SFBurlingtonScriptSC-Bold.woff") format(woff);
+}
+.font--sfburlingtonscriptsc-bold {
+  font-family: "SFBurlingtonScriptSC-Bold" !important;
+}
+
+@font-face {
+  font-family: "SFBurlingtonScriptSC-BoldIt";
+  src: url("./4 - Brush & Swash/SF Burlington Script/SFBurlingtonScriptSC-BoldIt.woff") format(woff);
+}
+.font--sfburlingtonscriptsc-boldit {
+  font-family: "SFBurlingtonScriptSC-BoldIt" !important;
+}
+
+@font-face {
+  font-family: "SFBurlingtonScriptSC-Italic";
+  src: url("./4 - Brush & Swash/SF Burlington Script/SFBurlingtonScriptSC-Italic.woff") format(woff);
+}
+.font--sfburlingtonscriptsc-italic {
+  font-family: "SFBurlingtonScriptSC-Italic" !important;
+}
+
+@font-face {
+  font-family: "SFBurlingtonScriptSC";
+  src: url("./4 - Brush & Swash/SF Burlington Script/SFBurlingtonScriptSC.woff") format(woff);
+}
+.font--sfburlingtonscriptsc {
+  font-family: "SFBurlingtonScriptSC" !important;
+}
+
+@font-face {
+  font-family: "Speedlin";
+  src: url("./4 - Brush & Swash/Speedline/Speedlin.woff") format(woff);
+}
+.font--speedlin {
+  font-family: "Speedlin" !important;
+}
+
+@font-face {
+  font-family: "WCManoNegraBta";
+  src: url("./4 - Brush & Swash/WC Mano Negra Bta/WCManoNegraBta.woff") format(woff);
+}
+.font--wcmanonegrabta {
+  font-family: "WCManoNegraBta" !important;
+}
+
+@font-face {
+  font-family: "ZephyrScriptFLF";
+  src: url("./4 - Brush & Swash/ZephyrScriptFLF/ZephyrScriptFLF.woff") format(woff);
+}
+.font--zephyrscriptflf {
+  font-family: "ZephyrScriptFLF" !important;
+}
+
+@font-face {
+  font-family: "Akashi_m";
+  src: url("./5 - Marker Scripts/Akashi MF/Akashi_m.woff") format(woff);
+}
+.font--akashi_m {
+  font-family: "Akashi_m" !important;
+}
+
+@font-face {
+  font-family: "caclaskoevenweight";
+  src: url("./5 - Marker Scripts/CAC Lasko Even Weight/caclaskoevenweight.woff") format(woff);
+}
+.font--caclaskoevenweight {
+  font-family: "caclaskoevenweight" !important;
+}
+
+@font-face {
+  font-family: "DESYREL_";
+  src: url("./5 - Marker Scripts/Desyrel/DESYREL_.woff") format(woff);
+}
+.font--desyrel_ {
+  font-family: "DESYREL_" !important;
+}
+
+@font-face {
+  font-family: "Holiday";
+  src: url("./5 - Marker Scripts/Holiday-India/Holiday.woff") format(woff);
+}
+.font--holiday {
+  font-family: "Holiday" !important;
+}
+
+@font-face {
+  font-family: "MachineScript";
+  src: url("./5 - Marker Scripts/MachineScript/MachineScript.woff") format(woff);
+}
+.font--machinescript {
+  font-family: "MachineScript" !important;
+}
+
+@font-face {
+  font-family: "nooscrip";
+  src: url("./5 - Marker Scripts/NoodleScript/nooscrip.woff") format(woff);
+}
+.font--nooscrip {
+  font-family: "nooscrip" !important;
+}
+
+@font-face {
+  font-family: "nooshade";
+  src: url("./5 - Marker Scripts/NoodleScript/nooshade.woff") format(woff);
+}
+.font--nooshade {
+  font-family: "nooshade" !important;
+}
+
+@font-face {
+  font-family: "PR8 Charade";
+  src: url("./5 - Marker Scripts/PR8 Charade/PR8 Charade.woff") format(woff);
+}
+.font--pr8-charade {
+  font-family: "PR8 Charade" !important;
+}
+
+@font-face {
+  font-family: "Rickles";
+  src: url("./5 - Marker Scripts/Rickles/Rickles.woff") format(woff);
+}
+.font--rickles {
+  font-family: "Rickles" !important;
+}
+
+@font-face {
+  font-family: "urb-b";
+  src: url("./5 - Marker Scripts/Urban Scrawl-Buttah/urb-b.woff") format(woff);
+}
+.font--urb-b {
+  font-family: "urb-b" !important;
+}
+
+@font-face {
+  font-family: "urb-c";
+  src: url("./5 - Marker Scripts/Urban Scrawl-Buttah/urb-c.woff") format(woff);
+}
+.font--urb-c {
+  font-family: "urb-c" !important;
+}
+
+@font-face {
+  font-family: "urb-d";
+  src: url("./5 - Marker Scripts/Urban Scrawl-Buttah/urb-d.woff") format(woff);
+}
+.font--urb-d {
+  font-family: "urb-d" !important;
+}
+
+@font-face {
+  font-family: "GinSSB60";
+  src: url("./6 - School Scripts/GinoSchoolScript Bold/GinSSB60.woff") format(woff);
+}
+.font--ginssb60 {
+  font-family: "GinSSB60" !important;
+}
+
+@font-face {
+  font-family: "KleinsFirstScript";
+  src: url("./6 - School Scripts/KleinsFirstScript/KleinsFirstScript.woff") format(woff);
+}
+.font--kleinsfirstscript {
+  font-family: "KleinsFirstScript" !important;
+}
+
+@font-face {
+  font-family: "Little Daisy";
+  src: url("./6 - School Scripts/Little Days/Little Daisy.woff") format(woff);
+}
+.font--little-daisy {
+  font-family: "Little Daisy" !important;
+}
+
+@font-face {
+  font-family: "Little Days Alt";
+  src: url("./6 - School Scripts/Little Days/Little Days Alt.woff") format(woff);
+}
+.font--little-days-alt {
+  font-family: "Little Days Alt" !important;
+}
+
+@font-face {
+  font-family: "Little days";
+  src: url("./6 - School Scripts/Little Days/Little days.woff") format(woff);
+}
+.font--little-days {
+  font-family: "Little days" !important;
+}
+
+@font-face {
+  font-family: "Maria_lucia";
+  src: url("./6 - School Scripts/MamaeQueNosFaz/Maria_lucia.woff") format(woff);
+}
+.font--maria_lucia {
+  font-family: "Maria_lucia" !important;
+}
+
+@font-face {
+  font-family: "WiegelKurrent";
+  src: url("./6 - School Scripts/Wiegel Kurrent/WiegelKurrent.woff") format(woff);
+}
+.font--wiegelkurrent {
+  font-family: "WiegelKurrent" !important;
+}
+
+@font-face {
+  font-family: "WiegelKurrentMedium";
+  src: url("./6 - School Scripts/Wiegel Kurrent/WiegelKurrentMedium.woff") format(woff);
+}
+.font--wiegelkurrentmedium {
+  font-family: "WiegelKurrentMedium" !important;
+}
+
+@font-face {
+  font-family: "A-Charming-Font-Expanded";
+  src: url("./7 - Decorative and Freestyle/A Charming Font/A-Charming-Font-Expanded.woff") format(woff);
+}
+.font--a-charming-font-expanded {
+  font-family: "A-Charming-Font-Expanded" !important;
+}
+
+@font-face {
+  font-family: "Achafexp";
+  src: url("./7 - Decorative and Freestyle/A Charming Font/Achafexp.woff") format(woff);
+}
+.font--achafexp {
+  font-family: "Achafexp" !important;
+}
+
+@font-face {
+  font-family: "Achafita";
+  src: url("./7 - Decorative and Freestyle/A Charming Font/Achafita.woff") format(woff);
+}
+.font--achafita {
+  font-family: "Achafita" !important;
+}
+
+@font-face {
+  font-family: "Achaflft";
+  src: url("./7 - Decorative and Freestyle/A Charming Font/Achaflft.woff") format(woff);
+}
+.font--achaflft {
+  font-family: "Achaflft" !important;
+}
+
+@font-face {
+  font-family: "Achafont";
+  src: url("./7 - Decorative and Freestyle/A Charming Font/Achafont.woff") format(woff);
+}
+.font--achafont {
+  font-family: "Achafont" !important;
+}
+
+@font-face {
+  font-family: "Achafout";
+  src: url("./7 - Decorative and Freestyle/A Charming Font/Achafout.woff") format(woff);
+}
+.font--achafout {
+  font-family: "Achafout" !important;
+}
+
+@font-face {
+  font-family: "Achafsex";
+  src: url("./7 - Decorative and Freestyle/A Charming Font/Achafsex.woff") format(woff);
+}
+.font--achafsex {
+  font-family: "Achafsex" !important;
+}
+
+@font-face {
+  font-family: "A La Nage Bold";
+  src: url("./7 - Decorative and Freestyle/A La Nage/A La Nage Bold.woff") format(woff);
+}
+.font--a-la-nage-bold {
+  font-family: "A La Nage Bold" !important;
+}
+
+@font-face {
+  font-family: "A La Nage";
+  src: url("./7 - Decorative and Freestyle/A La Nage/A La Nage.woff") format(woff);
+}
+.font--a-la-nage {
+  font-family: "A La Nage" !important;
+}
+
+@font-face {
+  font-family: "akaFrivolity";
+  src: url("./7 - Decorative and Freestyle/akaFrivolity/akaFrivolity.woff") format(woff);
+}
+.font--akafrivolity {
+  font-family: "akaFrivolity" !important;
+}
+
+@font-face {
+  font-family: "Caslon_Calligraphic";
+  src: url("./7 - Decorative and Freestyle/Caslon Calligraphic Initials/Caslon_Calligraphic.woff") format(woff);
+}
+.font--caslon_calligraphic {
+  font-family: "Caslon_Calligraphic" !important;
+}
+
+@font-face {
+  font-family: "Espania Normal";
+  src: url("./7 - Decorative and Freestyle/Espania/Espania Normal.woff") format(woff);
+}
+.font--espania-normal {
+  font-family: "Espania Normal" !important;
+}
+
+@font-face {
+  font-family: "Eutemia";
+  src: url("./7 - Decorative and Freestyle/Eutemia Italic/Eutemia.woff") format(woff);
+}
+.font--eutemia {
+  font-family: "Eutemia" !important;
+}
+
+@font-face {
+  font-family: "F-Miring Campotype";
+  src: url("./7 - Decorative and Freestyle/Fmiring Campotype One/F-Miring Campotype.woff") format(woff);
+}
+.font--f-miring-campotype {
+  font-family: "F-Miring Campotype" !important;
+}
+
+@font-face {
+  font-family: "HawaiiLover";
+  src: url("./7 - Decorative and Freestyle/Hawaii Lover/HawaiiLover.woff") format(woff);
+}
+.font--hawaiilover {
+  font-family: "HawaiiLover" !important;
+}
+
+@font-face {
+  font-family: "Hoodo";
+  src: url("./7 - Decorative and Freestyle/Hood Ornament/Hoodo.woff") format(woff);
+}
+.font--hoodo {
+  font-family: "Hoodo" !important;
+}
+
+@font-face {
+  font-family: "jandles";
+  src: url("./7 - Decorative and Freestyle/Jandles/jandles.woff") format(woff);
+}
+.font--jandles {
+  font-family: "jandles" !important;
+}
+
+@font-face {
+  font-family: "jano_etch";
+  src: url("./7 - Decorative and Freestyle/Jano/jano_etch.woff") format(woff);
+}
+.font--jano_etch {
+  font-family: "jano_etch" !important;
+}
+
+@font-face {
+  font-family: "kokekoko";
+  src: url("./7 - Decorative and Freestyle/Kokekoko/kokekoko.woff") format(woff);
+}
+.font--kokekoko {
+  font-family: "kokekoko" !important;
+}
+
+@font-face {
+  font-family: "kokekoko_light";
+  src: url("./7 - Decorative and Freestyle/Kokekoko/kokekoko_light.woff") format(woff);
+}
+.font--kokekoko_light {
+  font-family: "kokekoko_light" !important;
+}
+
+@font-face {
+  font-family: "Marcsc___";
+  src: url("./7 - Decorative and Freestyle/Marcelle Script/Marcsc___.woff") format(woff);
+}
+.font--marcsc___ {
+  font-family: "Marcsc___" !important;
+}
+
+@font-face {
+  font-family: "MKristall";
+  src: url("./7 - Decorative and Freestyle/MKristall/MKristall.woff") format(woff);
+}
+.font--mkristall {
+  font-family: "MKristall" !important;
+}
+
+@font-face {
+  font-family: "pee pee pants";
+  src: url("./7 - Decorative and Freestyle/Pee pants script/pee pee pants.woff") format(woff);
+}
+.font--pee-pee-pants {
+  font-family: "pee pee pants" !important;
+}
+
+@font-face {
+  font-family: "primusscript";
+  src: url("./7 - Decorative and Freestyle/Primus Script/primusscript.woff") format(woff);
+}
+.font--primusscript {
+  font-family: "primusscript" !important;
+}
+
+@font-face {
+  font-family: "registry";
+  src: url("./7 - Decorative and Freestyle/Registry (BRK)/registry.woff") format(woff);
+}
+.font--registry {
+  font-family: "registry" !important;
+}
+
+@font-face {
+  font-family: "Rudelskopf Deutsch";
+  src: url("./7 - Decorative and Freestyle/Rudelskopf deutsch/Rudelskopf Deutsch.woff") format(woff);
+}
+.font--rudelskopf-deutsch {
+  font-family: "Rudelskopf Deutsch" !important;
+}
+
+@font-face {
+  font-family: "stilltim";
+  src: url("./7 - Decorative and Freestyle/Still Time/stilltim.woff") format(woff);
+}
+.font--stilltim {
+  font-family: "stilltim" !important;
+}
+
+@font-face {
+  font-family: "tasapainoaisti_iso";
+  src: url("./7 - Decorative and Freestyle/tasapainoaisti_iso/tasapainoaisti_iso.woff") format(woff);
+}
+.font--tasapainoaisti_iso {
+  font-family: "tasapainoaisti_iso" !important;
+}
+
+@font-face {
+  font-family: "the_King__26_Queen_font";
+  src: url("./7 - Decorative and Freestyle/The King & Queen font/the_King__26_Queen_font.woff") format(woff);
+}
+.font--the_king__26_queen_font {
+  font-family: "the_King__26_Queen_font" !important;
+}
+
+@font-face {
+  font-family: "Velocette";
+  src: url("./7 - Decorative and Freestyle/Velocette/Velocette.woff") format(woff);
+}
+.font--velocette {
+  font-family: "Velocette" !important;
+}
+
+@font-face {
+  font-family: "VeniceClassic";
+  src: url("./7 - Decorative and Freestyle/Venice Classic/VeniceClassic.woff") format(woff);
+}
+.font--veniceclassic {
+  font-family: "VeniceClassic" !important;
+}
+
+@font-face {
+  font-family: "VictorianInitials1";
+  src: url("./7 - Decorative and Freestyle/Victorian Initials One/VictorianInitials1.woff") format(woff);
+}
+.font--victorianinitials1 {
+  font-family: "VictorianInitials1" !important;
+}
+
+@font-face {
+  font-family: "Vtks Sonho";
+  src: url("./7 - Decorative and Freestyle/Vtks Sonho/Vtks Sonho.woff") format(woff);
+}
+.font--vtks-sonho {
+  font-family: "Vtks Sonho" !important;
+}
+

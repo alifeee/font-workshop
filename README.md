@@ -14,3 +14,9 @@ sfnt2woff font.ttf
 ```bash
 find . -name "*.ttf" -exec sfnt2woff {} \;
 ```
+
+## Create `CSS` from `WOFF` files
+
+```bash
+find . -name "*.woff" -exec ./filename_to_css.sh {} \;
+```
