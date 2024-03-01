@@ -1,0 +1,46 @@
+Tagettes 1.0  & TagettesPlus 1.0
+
+ -- created by Pia Frauss in 2005, with High Logic's FontCreator Program --
+
+are FREE FONTS. I hope you'll enjoy them
+
+They are the type of Italian chancery writing of the 16th and 17th century that is mostly called Cancellaresca, and were developped out of a page of samples created by the French writing master Louis Barbedor around 1650.
+
+Both fonts are matching -- on my computer at least --, and you should therefore have no difficulties in making your texts more swashed by selecting some letters and having them displayed as the alternate glyphs.
+
+As usual, there is no number sign in this font, and you'll find a long s in its place. Despite the alternate font, there are still extras in the main font, e.g.
+
+- a double l on the left bracket
+- a double f on the right bracket
+- a less swashed simple g on the bar sign
+- a flourish on the underscore
+- a flourish on the ASCII tilde
+- and yet another flourish on the broken bar sign
+
+TagettesPlus contains neither figures nor punctuation marks, and its set of upper case glyphs is identical with that of the main font. Its lower case letters are the alternate ones. They are mostly swashed, but you'll find the simple f there, too, and the regular g, as well as two less space-taking ys, one of them on the period sign. As a last minute decision, I've added the simple g and the flourish that are contained on the bar and broken bar sign of the main font. In TagettesPlus, you'll find them on the comma and plus sign.
+
+
+
+_________________________________
+
+
+Disclaimer:
+
+1. The designer as well as owner of this font is Pia Frauss.
+
+2. This is a free font, but it is restricted to personal use only.
+
+3. This font may not be included in any commercial compilation of fonts, be it on CD, disks or other products, without the owner's permission.
+
+4. Altogether, this font may not be used for commercial ends and financial gain without the owner's permission.
+
+5. This font may be freely distributed, as long as the zipfile, including this text, remains unaltered.
+
+6. This font comes as it is. There is no warranty -- express or implied -- offered by the owner, or supplier. The risk of any losses or damages resulting from the use of this font remains wth the user.
+
+For any information or permission you need, please write to fonts@pia-frauss.de
+
+
+
+
+

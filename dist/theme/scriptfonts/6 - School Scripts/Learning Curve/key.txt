@@ -1,0 +1,10 @@
+
+
+
+warmup dingbat keys:
+
+The warmup dingbats are located in place of the following glyphs (Opt-t or Alt-0134) (Shift-Opt-7 or Alt-0135) (Shift-Opt-= or Alt-0177) (Opt-m or Alt-0181)
+
+
+
+

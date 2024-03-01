@@ -1,0 +1,27 @@
+Thanks for downloading NOODLE SCRIPT
+
+DESCRIPTION:
+
+NOODLE SCRIPT is a revival of sorts. I saw a sample in a book printed in the 1930's. The original typeface was called "Romany," and I've never seen its like in digital font format--and I've pored over a lot of recent (last ten years) specimens and font catalogs. So as an excercise, I thought I'd try to produce something similar. The result is admittedly a lot less artful than the original, yet, despite the warts, this font has some charm. Maybe.
+
+This font is free to use in all your designs and layouts. NOODLE SCRIPT may be duplicated and given away as often as you see fit, as long as you INCLUDE THIS README FILE. If you use this font in a commercial layout, I'd be really surprised. I'd be even more surprised if you actually dropped me a line, or sent me a sample of such a layout.
+
+INSTALLING NOODLE SCRIPT:
+
+MACINTOSH:
+For System 7 and above, just drag both the screen font and the printer font files onto your system folder icon. Finder will prompt you whether or not to add them to your Fonts folder; click OK and you're set! If you're using font management software like Suitcase, consult your user's manual for further instruction.
+
+WINDOWS:
+
+Windows 3.1: Open the control panel and choose FONTS
+Click the ADD button, find the TrueType font, and click OK.
+
+Windows 95 and above: Open the Windows FONT folder; click, drag, and drop the TrueType font inside.
+
+DISCLAIMER (This notice Must be included in any distribution):
+
+No guarantee of any kind is made that NOODLE SCRIPT will work on your machine. I've tested it on mine, and it works fine. Dave Bastian MAKES NO WARRANTIES, EXPRESS OR IMPLIED, REGARDING THIS FONT. Dave Bastian DOES NOT WARRANT, GUARANTEE OR MAKE ANY REPRESENATIONS REGARDING THE USE OR THE RESULTS OF THE USE OF THIS FONT IN TERMS OF ITS RELIABILITY, OR OTHERWISE. IN NO EVENT WILL Dave Bastian BE LIABLE TO YOU FOR ANY DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE Noodle Script. Please always use _your_ noodle.
+
+Please take a moment to mention where you found NOODLE SCRIPT and feel free to comment or criticize, care of "fonts@davebastian.com"
+
+Other free fonts available at <http://www.davebastian.com>

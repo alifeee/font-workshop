@@ -1,0 +1,27 @@
+Thanks for downloading NOODLE SHADED
+
+DESCRIPTION:
+
+NOODLE SHADED is my shaded remix of NOODLE SCRIPT (you might wanna download that font, too).  This font has only minimal punctuation. Use it at point sizes of 24 or above.
+
+This font is free to use in all your designs and layouts. NOODLE SHADED may be duplicated and given away as often as you see fit, so long as you INCLUDE THIS README FILE. Please don't rename it, and/or tell people you made it, because liars go to hell. By the way, if you use this in a commercial layout, I'd be really surprised. I'd be even more surprised if you actually dropped me a line, or sent me a sample of such a layout.
+
+INSTALLING NOODLE SHADED:
+
+MACINTOSH:
+For System 7 and above, just drag both the screen font and the printer font files onto your system folder icon. Finder will prompt you whether or not to add them to your Fonts folder; click OK and you're set! If you're using font management software like Suitcase, consult your user's manual for further instruction.
+
+WINDOWS:
+
+Windows 3.1: Open the control panel and choose FONTS
+Click the ADD button, find the TrueType font, and click OK.
+
+Windows 95 and above: Open the Windows FONT folder; click, drag, and drop the TrueType font inside.
+
+DICLAIMER (This notice MUST be included with any distribution):
+
+NOODLE SHADED works fine on my Macintosh. It may not work on your PC. Dave Bastian MAKES NO WARRANTIES, EXPRESS OR IMPLIED, REGARDING THIS FONT. Dave Bastian DOES NOT WARRANT, GUARANTEE OR MAKE ANY REPRESENATIONS REGARDING THE USE OR THE RESULTS OF THE USE OF THIS FONT IN TERMS OF ITS RELIABILITY, OR OTHERWISE. IN NO EVENT WILL Dave Bastian BE LIABLE TO YOU FOR ANY DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE Noodle Shaded. You, however, are encouraged to use _your_ noodle.
+
+Please take a moment to mention where you found NOODLE SHADED and feel free to comment or criticize, care of "fonts@davebastian.com"
+
+Other free fonts available at <http://www.davebastian.com>
