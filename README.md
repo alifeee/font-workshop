@@ -20,3 +20,7 @@ find . -name "*.ttf" -exec sfnt2woff {} \;
 ```bash
 find . -name "*.woff" -exec ./filename_to_css.sh {} \;
 ```
+
+## Make presentation into a PDF
+
+See <https://revealjs.com/pdf-export/>
