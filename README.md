@@ -8,3 +8,9 @@ Presentation for a font-making workshop using [reveal.js](https://revealjs.com/)
 sudo apt-get install woff-tools
 sfnt2woff font.ttf
 ```
+
+### In bulk
+
+```bash
+find . -name "*.ttf" -exec sfnt2woff {} \;
+```
