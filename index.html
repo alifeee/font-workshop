@@ -97,13 +97,13 @@
           <div class="r-stack r-stretch">
             <img
               class="fragment"
-              style="rotate: 4deg"
+              style="rotate: 4deg; max-height: 100%"
               src="./images/book_why-fonts-matter.jpg"
               alt='Book cover of "Why Fonts Matter"'
             />
             <img
               class="fragment"
-              style="rotate: -2deg"
+              style="rotate: -2deg; max-height: 100%"
               src="./images/book_script-fonts.jpg"
               alt='Book cover of "Script Fonts"'
             />
@@ -473,9 +473,9 @@
     </div>
 
     <script src="dist/reveal.js"></script>
-    <!-- <script src="plugin/notes/notes.js"></script> -->
     <!-- <script src="plugin/markdown/markdown.js"></script> -->
     <!-- <script src="plugin/highlight/highlight.js"></script> -->
+    <script src="dist/plugins/notes.js"></script>
     <script src="dist/plugins/countdown.js"></script>
     <script>
       // More info about initialization & config:
@@ -487,6 +487,7 @@
         // Learn about plugins: https://revealjs.com/plugins/
         // plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
         countdown: { defaultTime: 600, autostart: "no" },
+        plugins: [RevealNotes],
       });
     </script>
   </body>
