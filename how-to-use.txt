@@ -1,0 +1,35 @@
+# Using personal fonts
+
+To use a personal font:
+
+## On your own website or HTML page
+
+Create a CSS class...
+
+```CSS
+@font-face {
+    font-family: "BogFace";
+    src: url("./bogface/BogFace.woff") format("woff");
+}
+.font--bogface {
+    font-family: "BogFace", sans-serif;
+}
+```
+
+and use it on anything you want styled with that font! Like this
+
+```html
+<span class="font--bogface">simple BogFace!</span> 
+```
+
+## On your computer
+
+Install the font file and then you can use it in anything that uses fonts (Notepad, MS Word, Paint, Photoshop, etc.)
+
+## On your browser
+
+Install the font file and change your default font to your font in the browser settings.
+
+## Physically
+
+Laser cut something and you can use your font! Change the "text" to a "path" in your vector graphics software so that the laser cutter does not need to have your font installed.

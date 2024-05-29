@@ -21,48 +21,20 @@
       .block {
         display: block;
       }
+      .reveal h1 {
+        font-family: unset;
+      }
     </style>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        let stylesheets = document.styleSheets;
-        let rules;
-        for (let i = 0; i < stylesheets.length; i++) {
-          let stylesheet = stylesheets[i];
-          if (
-            stylesheet.href &&
-            stylesheet.href.includes("scriptfonts/fonts.css")
-          ) {
-            rules = stylesheet.cssRules;
-          }
-        }
-        // loop over CSSStyleRules and collect selectorText
-        let selectors = [];
-        for (let i = 0; i < rules.length; i++) {
-          let rule = rules[i];
-          if (rule instanceof CSSStyleRule) {
-            // remove leading dot
-            let selector = rule.selectorText.slice(1);
-            selectors.push(selector);
-          }
-        }
-
-        let fontswitch = document.getElementById("font-switch");
-        console.log(fontswitch);
-        // change class of font-switch to a random font every 2 seconds
-        let interval = setInterval(() => {
-          let randomIndex = Math.floor(Math.random() * selectors.length);
-          // remove final class and add new class
-          fontswitch.classList.remove(fontswitch.classList[1]);
-          fontswitch.classList.add(selectors[randomIndex]);
-        }, 10000);
-      });
-    </script>
   </head>
+  <script src="./dist/font-toggler.js"></script>
   <body>
     <div class="reveal">
       <section class="slides">
+        <!-- slide -->
         <section>
-          <h1 class="font--bogface">Font Workshop!</h1>
+          <font-toggler stylesheet="fonts.css" every_s="5">
+            <h1 style="text-wrap: nowrap; font-size: 3rem">Font Workshop!</h1>
+          </font-toggler>
           <img
             style="border-radius: 50%; height: 8rem; margin: 0"
             src="https://alifeee.co.uk/profile-picture.png"
@@ -85,31 +57,76 @@
             >
           </figcaption>
         </section>
+
+        <!-- slide -->
         <section>
           <ul class="font--epilog">
             <li>Why I like fonts</li>
-            <li>Specifics about fonts</li>
-            <li>Specifics about FontForge</li>
+            <li>How to make a font</li>
+            <ul>
+              <li>Design</li>
+              <li>FontForge</li>
+            </ul>
           </ul>
         </section>
+
+        <!-- slide -->
         <section data-auto-animate>
-          <h1 class="font--germs">Why I like fonts</h1>
+          <h1 class="font--kokekoko">Design is fun</h1>
           <div class="r-stack r-stretch">
             <img
               class="fragment"
-              style="rotate: 4deg; max-height: 100%"
+              data-fragment-index="1"
+              style="rotate: -2deg"
+              src="./images/book_script-fonts.jpg"
+              alt='Book cover of "Script Fonts"'
+            />
+            <img
+              class="fragment"
+              data-fragment-index="2"
+              style="rotate: 4deg"
               src="./images/book_why-fonts-matter.jpg"
               alt='Book cover of "Why Fonts Matter"'
             />
             <img
               class="fragment"
-              style="rotate: -2deg; max-height: 100%"
-              src="./images/book_script-fonts.jpg"
-              alt='Book cover of "Script Fonts"'
+              data-fragment-index="3"
+              style="rotate: -1deg"
+              src="./images/why-fonts-matter-supermarket-blank.png"
+              alt=""
+            />
+            <img
+              class="fragment"
+              data-fragment-index="4"
+              style="rotate: 1deg"
+              src="./images/why-fonts-matter-supermarket-fonted.png"
+              alt=""
             />
           </div>
-          <h2 class="fragment font--bogface">They have feelings</h2>
+          <div class="r-stack font--epilog" style="font-size: 1.5rem">
+            <figcaption
+              class="fragment fade-in-then-out"
+              data-fragment-index="1"
+            >
+              Geum-hee Hong (2015),
+              <a
+                href="https://www.goodreads.com/book/show/26246257-script-fonts"
+              >
+                <cite>Script Fonts</cite> </a
+              >. Laurence King Publishing, ISBN 9781780677583.
+            </figcaption>
+            <figcaption class="fragment fade-in" data-fragment-index="2">
+              Sarah Hyndman (2015),
+              <a
+                href="https://www.goodreads.com/book/show/25658538-why-fonts-matter"
+              >
+                <cite>Why Fonts Matter</cite> </a
+              >. Type Tasting, ISBN 9780753551912.
+            </figcaption>
+          </div>
         </section>
+
+        <!-- slide -->
         <section>
           <section data-auto-animate>
             <h1>A history of typefaces</h1>
@@ -127,12 +144,14 @@
             <h1 class="font--chopin-script">A history of typefaces</h1>
           </section>
         </section>
+
+        <!-- slide -->
         <section>
-          <h2 class="font--natural-log">
+          <h2 class="font--toms-new-roman">
             How many fonts do you encounter in a day?
           </h2>
           <!-- press t to start timer -->
-          <h3 class="fragment font--toms-new-roman" data-fragment-index="1">
+          <h3 class="fragment font--epilog" data-fragment-index="1">
             How about in a minute?
           </h3>
           <countdown
@@ -145,65 +164,141 @@
             data-fragment-index="1"
             time="60"
             autostart="no"
-          />
+          ></countdown>
+          <div class="fragment font--toms-handwriting">
+            <p>How many did you find?</p>
+            <p>Is it more than you expect?</p>
+            <p>How different are they?</p>
+            <p>How many do you think you see in a day?</p>
+          </div>
         </section>
+
+        <!-- slide -->
         <section data-auto-animate>
           <section>
-            <h1 class="font--germs">Why I like fonts</h1>
-            <h2 class="fragment font--bogface" data-fragment-index="1">
-              They are personal
-            </h2>
-            <h3 class="fragment font--toms-new-roman" data-fragment-index="1">
-              This brings me joy
-            </h3>
-          </section>
-          <section>
-            <p class="font--toms-handwriting">Fonts by Tom7</p>
-            <img
-              class="r-stretch"
-              src="./images/fonts_by_tom7.png"
-              alt="Screenshot of Tom7's font website"
-            />
-            <figcaption>
-              <a
-                href="http://fonts.tom7.com/"
-                target="_blank"
-                class="font--toms-handwriting"
-                >http://fonts.tom7.com/</a
+            <h1 style="font-size: 5rem" class="font--natural-log">
+              Individuality is fun
+            </h1>
+            <div class="r-stack r-stretch">
+              <img
+                class="fragment"
+                data-fragment-index="1"
+                style="rotate: -2deg"
+                src="./images/fonts_by_tom7.png"
+                alt="Screenshot of fonts.tom7.com"
+              />
+              <img
+                class="fragment"
+                data-fragment-index="2"
+                style="rotate: 4deg"
+                src="./images/fonts_by_clofont.png"
+                alt="Screenshot of clofont.free.fr"
+              />
+            </div>
+            <div class="r-stack font--epilog" style="font-size: 1.5rem">
+              <figcaption
+                class="fragment fade-in-then-out"
+                data-fragment-index="1"
               >
-            </figcaption>
-          </section>
-          <section>
-            <p class="font--unplugged">Fonts by CloFont</p>
-            <img
-              class="r-stretch"
-              src="./images/fonts_by_clofont.png"
-              alt="Screenshot of Clofont's font website"
-            />
-            <figcaption>
-              <a
-                href="http://clofont.free.fr/"
-                target="_blank"
-                class="font--unplugged"
-                >http://clofont.free.fr/</a
-              >
-            </figcaption>
+                <a href="http://fonts.tom7.com/">
+                  <cite>http://fonts.tom7.com/</cite></a
+                >
+              </figcaption>
+              <figcaption class="fragment fade-in" data-fragment-index="2">
+                <a href="http://clofont.free.fr/"
+                  ><cite>http://clofont.free.fr/</cite></a
+                >
+              </figcaption>
+            </div>
           </section>
         </section>
+
+        <!-- slide -->
         <section>
           <h1 class="font--germs">Why I like fonts</h1>
           <h2 class="fragment font--bogface">I can use them!</h2>
-          <ul class="fragment font--toms-new-roman">
-            <li>Websites</li>
-            <li>Documents</li>
-            <li>Custom Font Defaults (Notepad, Browser)</li>
-            <li>Printing & laser-cutting</li>
-            <li>Digital greetings cards</li>
-          </ul>
-          <p class="fragment font--toms-handwriting">
-            Computers are still customisable!
-          </p>
         </section>
+
+        <!-- slide -->
+        <section>
+          <h1 style="font-size: 3rem" class="font--bogface">
+            Using personal fonts -
+            <span style="font-size: 2rem; height: 100%"
+              ><a href="./how-to-use.txt">how?</a></span
+            >
+          </h1>
+          <!-- grid of three images with bottom centred -->
+          <div class="r-stack">
+            <div class="fragment fade-out">
+              <p class="font--toms-handwriting">
+                Computers are still customisable!
+              </p>
+              <ul class="font--toms-new-roman">
+                <li>Websites</li>
+                <li>Documents</li>
+                <li>Custom Font Defaults (Notepad, Browser)</li>
+                <li>Printing & laser-cutting</li>
+                <li>Digital greetings cards</li>
+              </ul>
+            </div>
+            <div
+              style="display: grid; grid-template-columns: repeat(2, 1fr)"
+              class="r-stretch font--epilog fragment fade-in"
+            >
+              <figure>
+                <img
+                  style="border-radius: 1rem; margin: 0"
+                  src="./images/using_webfonts_weeknotes.png"
+                  alt="Screenshot of weeknotes.alifeee.co.uk"
+                />
+                <figcaption style="font-size: 1.5rem">
+                  <a href="https://weeknotes.alifeee.co.uk"
+                    >weeknotes.alifeee.co.uk</a
+                  >
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  style="border-radius: 1rem; margin: 0"
+                  src="./images/offweb_laser.png"
+                  alt="Picture of laser-cut wood, with bogface font"
+                />
+                <figcaption style="font-size: 1.5rem">
+                  <a href="https://blog.alifeee.co.uk/factorio-proximity-chat/"
+                    >blog.alifeee.co.uk/factorio-proximity-chat</a
+                  >
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  style="border-radius: 1rem; margin: 0"
+                  src="./images/offweb_invoice.png"
+                  alt="Screenshot of a fake invoice to EMF Camp, in BogFace font"
+                />
+                <figcaption style="font-size: 1.5rem">
+                  <a href="https://github.com/alifeee/invoice_template/"
+                    >github.com/alifeee/invoice_template</a
+                  >
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  style="border-radius: 1rem; margin: 0"
+                  src="./images/using_webfonts_card.png"
+                  alt="Screenshot of alifeee.co.uk/pages/card.html"
+                />
+                <figcaption style="font-size: 1.5rem">
+                  <a
+                    href="https://alifeee.co.uk/pages/card.html?n=VG86IEZFUw==&m=Q29uZ3JhdHVsYXRpb25zIG9uIGZpbmRpbmcgYW4gRWFzdGVyIGVnZyB0aGlzIGhvbHkgd2VlayBvZiBFYXN0ZXI="
+                    >greetings card</a
+                  >
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <!-- slide -->
         <section>
           <h1 class="font--epilog">How to design a font</h1>
           <p class="fragment font--bogface" data-fragment-index="1">
@@ -222,6 +317,8 @@
             >
           </p>
         </section>
+
+        <!-- slide -->
         <section>
           <p>
             <a
@@ -238,6 +335,8 @@
             <li>Points & the em-unit</li>
           </ul>
         </section>
+
+        <!-- slide -->
         <section>
           <p>
             <a
@@ -260,6 +359,8 @@
             <li>flourish, serif, & decoration</li>
           </ul>
         </section>
+
+        <!-- slide -->
         <section>
           <p>
             <a
@@ -306,9 +407,13 @@
             <li>generating a font</li>
           </ul>
         </section>
+
+        <!-- slide -->
         <section>
           <h1 class="font--toms-handwriting">How to use FontForge</h1>
         </section>
+
+        <!-- slide -->
         <section>
           <section>
             <h2 class="font--epilog">Context</h2>
@@ -335,105 +440,151 @@
             </div>
           </section>
         </section>
-        <section>
-          <section data-auto-animate>
-            <h2 class="font--epilog" data-id="h2">FontForge Windows</h2>
-            <ul class="font--toms-handwriting">
-              <li>Overview ("Bitmap Window")</li>
-              <li>Drawing ("Outline Window")</li>
-              <li>Preview ("Metrics Window")</li>
-            </ul>
-          </section>
-          <section data-auto-animate>
-            <h2 class="font--epilog" data-id="h2">FontForge Windows: Bitmap</h2>
-            <h3 class="font--toms-handwriting">"The Overview"</h3>
-            <img
-              class="r-stretch"
-              src="./images/fontforge_window_bitmap.png"
-              alt="FontForge bitmap window, showing lots of letters, some filled in."
-            />
-          </section>
-          <section data-auto-animate>
-            <h2 class="font--epilog" data-id="h2">
-              FontForge Windows: Metrics
-            </h2>
-            <h3 class="font--toms-handwriting">"The Preview"</h3>
-            <img
-              src="./images/fontforge_window_metrics.png"
-              alt="FontForge Metrics window, showing a preview of the font."
-            />
-            <p class="fragment">spacing, kerning</p>
-          </section>
-          <section data-auto-animate>
-            <h2 class="font--epilog" data-id="h2">
-              FontForge Windows: Outline
-            </h2>
-            <h3 class="font--toms-handwriting">"The Drawing"</h3>
-            <img
-              class="r-stretch"
-              src="./images/fontforge_window_outline.png"
-              alt="FontForge outline window, showing a half-drawn letter A, and Bezier points."
-            />
-            <p class="fragment">
-              baseline, cap height, x-height, ascender height, descender depth
-            </p>
-          </section>
-          <section data-auto-animate>
-            <div class="r-stack r-stretch">
-              <img
-                src="./images/fontforge_window_outline.png"
-                alt="FontForge outline window, showing a half-drawn letter A, and Bezier points."
-              />
-              <img
-                class="fragment"
-                data-fragment-index="1"
-                src="./images/fontforge_docs_window_outline.png"
-                alt="annotated view of the FontForge outline window from their docs"
-              />
-            </div>
-            <figcaption class="fragment" data-fragment-index="1">
-              <a
-                href="https://fontforge.org/docs/ui/mainviews/charview.html"
-                target="_blank"
-                >https://fontforge.org/docs/ui/mainviews/charview.html</a
-              >
-            </figcaption>
-          </section>
+
+        <!-- slide -->
+        <section data-auto-animate>
+          <h2 class="font--epilog" data-id="h2">FontForge Windows</h2>
+          <ul class="font--toms-handwriting">
+            <li>Overview ("Bitmap Window")</li>
+            <li>Drawing ("Outline Window")</li>
+            <li>Preview ("Metrics Window")</li>
+          </ul>
         </section>
-        <section>
-          <section data-auto-animate>
-            <h1 class="font--epilog">How to make letter forms</h1>
-            <ul>
-              <li class="fragment font--natural-log">Digitally drawing them</li>
-              <li class="fragment font--toms-new-roman">Modifying them</li>
-              <li class="fragment font--toms-handwriting">Tracing them</li>
-            </ul>
-          </section>
-          <section>
-            <h3 class="font--toms-handwriting" data-id="heading">Tracing</h3>
-            <p class="font--epilog fragment" data-fragment-index="1">
-              "rough and ready"
-            </p>
-            <div class="r-stack r-stretch">
-              <img
-                class="fragment"
-                data-fragment-index="1"
-                src="./images/fontforge_kiran_A_background.png"
-                alt="FontForge outline window, showing an outline of a letter A."
-              />
-              <img
-                class="fragment"
-                src="./images/fontforge_kiran_A_full.png"
-                alt="FontForge outline window, showing a letter A, with lots of Bezier points."
-              />
-              <img
-                class="fragment"
-                src="./images/fontforge_kiran_A_simplified.png"
-                alt="FontForge outline window, showing a letter A, with fewer Bezier points than the previous image."
-              />
-            </div>
-          </section>
+
+        <!-- slide -->
+        <section data-auto-animate>
+          <h2 class="font--epilog" data-id="h2">FontForge Windows: Bitmap</h2>
+          <h3 class="font--toms-handwriting">"The Overview"</h3>
+          <img
+            class="r-stretch"
+            src="./images/fontforge_window_bitmap.png"
+            alt="FontForge bitmap window, showing lots of letters, some filled in."
+          />
         </section>
+
+        <!-- slide -->
+        <section data-auto-animate>
+          <h2 class="font--epilog" data-id="h2">FontForge Windows: Metrics</h2>
+          <h3 class="font--toms-handwriting">"The Preview"</h3>
+          <img
+            src="./images/fontforge_window_metrics.png"
+            alt="FontForge Metrics window, showing a preview of the font."
+          />
+          <p>spacing & kerning</p>
+        </section>
+
+        <!-- slide -->
+        <section data-auto-animate>
+          <h2 class="font--epilog" data-id="h2">FontForge Windows: Outline</h2>
+          <h3 class="font--toms-handwriting">"The Drawing"</h3>
+          <img
+            class="r-stretch"
+            src="./images/fontforge_window_outline.png"
+            alt="FontForge outline window, showing a half-drawn letter A, and Bezier points."
+          />
+          <figcaption style="font-size: 1.5rem">
+            <a href="https://fontforge.org/docs/ui/mainviews/charview.html">
+              https://fontforge.org/docs/ui/mainviews/charview.html
+            </a>
+          </figcaption>
+          <p style="font-size: 1.5rem">
+            baseline, cap height, x-height, ascender height, descender depth
+          </p>
+        </section>
+
+        <!-- slide -->
+        <section>
+          <h1 class="font--epilog">How to make letter forms</h1>
+          <ul>
+            <li class="font--natural-log">
+              Digitally drawing them (in any vector graphics program)
+            </li>
+            <li class="font--toms-new-roman">Modifying them</li>
+            <li class="font--toms-handwriting">Tracing them</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="font--epilog" data-id="h2">Outline a letter form</h2>
+          <div class="r-stack r-stretch">
+            <img
+              class="fragment fade-in-then-out"
+              data-fragment-index="1"
+              src="./images/outline_1_import_image.png"
+              alt="FontForge outline window, showing an outline of the letter A. The background layer is highlighted"
+            />
+            <img
+              class="fragment fade-in-then-out"
+              data-fragment-index="2"
+              src="./images/outline_2_outline.png"
+              alt="FontForge outline window, showing a letter which has been traced around with vector points. The pointer tool, curve bezier point tool, corner bezier point tool, and foreground layer are highlighted"
+            />
+            <img
+              class="fragment fade-in-then-out"
+              data-fragment-index="3"
+              src="./images/outline_2p5_traced.png"
+              alt="FontForge outline window, showing a letter which has been traced around with vector points. There are loads of points and it looks messy."
+            />
+            <img
+              class="fragment fade-in-then-out"
+              data-fragment-index="4"
+              src="./images/outline_2p10_simplified.png"
+              alt="FontForge outline window, showing a letter which has been traced around with vector points. There are fewer points than the previous image, but still quite a few."
+            />
+            <img
+              class="fragment fade-in-then-out"
+              data-fragment-index="5"
+              src="./images/outline_3_preview.png"
+              alt="FontForge outline window, showing a black letter A silhouette."
+            />
+          </div>
+          <div class="r-stack">
+            <p class="fragment fade-in-then-out" data-fragment-index="1">
+              Background layer for tracing images (File > Import)
+            </p>
+            <p class="fragment fade-in-then-out" data-fragment-index="2">
+              Tracing with curve and corner bezier points
+            </p>
+            <p class="fragment fade-in-then-out" data-fragment-index="3">
+              Element > Autotrace (more noise)
+            </p>
+            <p class="fragment fade-in-then-out" data-fragment-index="4">
+              Element > Simplify > Simplify
+            </p>
+            <p class="fragment fade-in-then-out" data-fragment-index="5">
+              Hold <kbd>space</kbd> for preview
+            </p>
+          </div>
+        </section>
+
+        <!-- slide -->
+        <section>
+          <h2 class="font--epilog" data-id="h2">Expand a path</h2>
+          <div class="r-stack r-stretch">
+            <img
+              class="fragment fade-in-then-out"
+              data-fragment-index="0"
+              src="./images/expand_path_1_path.png"
+              alt="FontForge outline window, showing a stick-figure letter A. The pen tool is highlighted."
+            />
+            <img
+              class="fragment fade-in-then-out"
+              data-fragment-index="1"
+              src="./images/expand_path_2_expanded.png"
+              alt="FontForge outline window, showing a bubbly letter A, which has been expanded from the previous stick-figure letter."
+            />
+          </div>
+          <div class="r-stack">
+            <p class="fragment fade-in-then-out" data-fragment-index="0">
+              Draw letter (touchscreen/mouse)
+            </p>
+            <p class="fragment fade-in-then-out" data-fragment-index="1">
+              Element > Expand Stroke
+            </p>
+          </div>
+        </section>
+
+        <!-- slide -->
         <section>
           <h1 class="font--natural-log">Let's make a font!</h1>
           <ul class="font--toms-handwriting">
@@ -451,23 +602,79 @@
             </li>
           </ol>
         </section>
+
+        <!-- slide -->
         <section>
-          <img
-            style="height: 10rem"
-            src="./images/qr_to_website.png"
-            alt="QR code linking to https://alifeee.co.uk/font-workshop/"
-          />
-          <figcaption
-            class="font--toms-handwriting"
-            style="margin-bottom: 2rem"
-          >
-            <a href="https://alifeee.co.uk/font-workshop/" target="_blank"
-              >https://alifeee.co.uk/font-workshop/</a
+          <div style="display: grid; grid-template-columns: 1fr 1fr 1fr">
+            <figure
+              style="display: flex; flex-direction: column; align-items: center"
+              class="font--bogface"
             >
-          </figcaption>
-          <h1 id="font-switch" class="r-stretch font--bogface">
-            Let's make a font!
-          </h1>
+              <img
+                style="border-radius: 50%; height: 10rem; margin: 0"
+                src="https://alifeee.co.uk/profile-picture.png"
+                alt="pixel-art drawing of author. headshot."
+              />
+              <p style="margin-top: auto">
+                by <a href="https://linktr.ee/alifeee">alifeee</a>
+              </p>
+            </figure>
+            <figure class="font--epilog">
+              <img
+                style="height: 10rem"
+                src="./images/qr_to_website.png"
+                alt="QR code linking to https://alifeee.co.uk/font-workshop/"
+              />
+              <figcaption style="font-size: 1.5rem">
+                <a href="https://alifeee.co.uk/font-workshop/">
+                  alifeee.co.uk/font-workshop
+                </a>
+              </figcaption>
+            </figure>
+            <div>
+              <h2
+                style="font-size: 2rem; margin-top: 1rem"
+                class="font--toms-new-roman"
+              >
+                Other stuff
+              </h2>
+              <nav style="font-size: 1.5rem" class="font--epilog">
+                <ul>
+                  <li>
+                    <a href="https://blog.alifeee.co.uk/making-bogface/">
+                      (blog) making bogface
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://blog.alifeee.co.uk/font-workshop/">
+                      (blog) font workshop
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://alifeee.co.uk/fonts/">(website) fonts</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/alifeee/font-toggler">
+                      (web component) font toggler
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div
+            class="r-stretch"
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <font-toggler stylesheet="fonts.css" every_s="5">
+              <h1 style="display: block">Let's make a font!</h1>
+            </font-toggler>
+          </div>
         </section>
       </section>
     </div>
