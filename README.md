@@ -1,3 +1,5 @@
+> [!CAUTION]
+> MOVED! see <https://git.alifeee.net/font-workshop/about/>
 # Font Workshop
 
 Presentation for a font-making workshop using [reveal.js](https://revealjs.com/).
